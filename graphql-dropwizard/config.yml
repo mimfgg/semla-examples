@@ -1,0 +1,6 @@
+datasource:
+  type: postgresql
+  driverClassName: org.postgresql.Driver
+  jdbcUrl: jdbc:postgresql://host:port/database
+  username: username
+  password: password

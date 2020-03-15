@@ -13,7 +13,7 @@
         <dependency>
             <groupId>io.semla</groupId>
             <artifactId>semla-mysql</artifactId>
-            <version>1.0.0</version>
+            <version>${semla.version}</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>io.semla</groupId>
             <artifactId>semla-logging</artifactId>
-            <version>1.0.0</version>
+            <version>${semla.version}</version>
         </dependency>
         <dependency>
             <groupId>org.testcontainers</groupId>
@@ -40,7 +40,7 @@
         <dependency>
             <groupId>io.semla</groupId>
             <artifactId>semla-testing</artifactId>
-            <version>1.0.0</version>
+            <version>${semla.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -49,7 +49,7 @@
             <plugin>
                 <groupId>io.semla</groupId>
                 <artifactId>semla-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>${semla.version}</version>
                 <configuration>
                     <sources>
                         <source>/src/main/java/io/semla/examples/mysql/model/**</source>
