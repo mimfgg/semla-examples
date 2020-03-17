@@ -22,7 +22,7 @@ import org.testcontainers.containers.JdbcDatabaseContainer;
 import org.testcontainers.containers.PostgreSQLContainer;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(glue = "io.semla.cucumber.steps")
+@CucumberOptions(plugin = "pretty")
 public class GraphQLApplicationTest {
 
   public static class Steps {
@@ -42,7 +42,6 @@ public class GraphQLApplicationTest {
         server = new DropwizardAppRule<>(GraphQLApplication.class,
             GraphQLConfiguration.builder()
                 .datasource(PostgresqlDatasource.configure()
-                    .withDriverClassName("org.postgresql.Driver")
                     .withJdbcUrl(db.getJdbcUrl())
                     .withUsername(db.getUsername())
                     .withPassword(db.getPassword())

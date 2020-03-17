@@ -16,8 +16,4 @@ public class GraphQLConfiguration extends Configuration {
   public DatasourceConfiguration getDatasource() {
     return datasource;
   }
-
-  public void setDatasource(final DatasourceConfiguration datasource) {
-    this.datasource = datasource;
-  }
 }

@@ -13,7 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <semla.version>1.0.2</semla.version>
+        <semla.version>1.0.3</semla.version>
     </properties>
     <modules>
         <module>minimal-mysql</module>
