@@ -1,5 +1,6 @@
 package io.semla.examples.graphql.model;
 
+import io.semla.persistence.annotations.Indexed;
 import io.semla.persistence.annotations.Managed;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -22,6 +23,7 @@ public class Book {
   @GeneratedValue
   public int id;
 
+  @Indexed
   @NotNull
   public String name;
 

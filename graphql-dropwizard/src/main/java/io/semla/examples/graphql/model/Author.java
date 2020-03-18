@@ -1,5 +1,6 @@
 package io.semla.examples.graphql.model;
 
+import io.semla.persistence.annotations.Indexed;
 import io.semla.persistence.annotations.Managed;
 import java.util.List;
 import javax.persistence.CascadeType;
@@ -23,6 +24,7 @@ public class Author {
   @GeneratedValue
   public int id;
 
+  @Indexed
   @NotNull
   public String name;
 
