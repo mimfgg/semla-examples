@@ -1,1 +1,1 @@
-A simple example of a graphql endpoint in a Dropwizard application.
+A simple example of a graphql endpoint in a Dropwizard application TDD-ed with [cucumber](https://github.com/mimfgg/semla-examples/blob/master/graphql-dropwizard/src/test/resources/io/semla/examples/graphql/graphql.feature).
