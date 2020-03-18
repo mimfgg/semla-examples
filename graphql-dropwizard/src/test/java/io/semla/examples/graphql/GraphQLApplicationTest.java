@@ -2,6 +2,7 @@ package io.semla.examples.graphql;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import ch.qos.logback.classic.Level;
 import cucumber.api.CucumberOptions;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
@@ -11,6 +12,7 @@ import cucumber.api.junit.Cucumber;
 import io.dropwizard.testing.junit.DropwizardAppRule;
 import io.semla.datasource.PostgresqlDatasource;
 import io.semla.examples.graphql.config.GraphQLConfiguration;
+import io.semla.logging.Logging;
 import io.semla.serialization.json.Json;
 import io.semla.serialization.json.JsonSerializer;
 import io.semla.util.Maps;
@@ -49,6 +51,7 @@ public class GraphQLApplicationTest {
                 .build());
       }
       server.getTestSupport().before();
+      Logging.withAppenderLevel("io.semla", Level.DEBUG).setup();
     }
 
     @After
