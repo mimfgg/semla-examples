@@ -3,12 +3,12 @@ package io.semla.examples.graphql;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import ch.qos.logback.classic.Level;
-import cucumber.api.CucumberOptions;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import io.dropwizard.testing.junit.DropwizardAppRule;
 import io.semla.datasource.PostgresqlDatasource;
 import io.semla.examples.graphql.config.GraphQLConfiguration;
