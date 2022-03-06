@@ -2,21 +2,14 @@ package io.semla.examples.graphql.model;
 
 import io.semla.persistence.annotations.Indexed;
 import io.semla.persistence.annotations.Managed;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
+import javax.persistence.*;
 import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Managed
-@AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class Book {
 
   @Id

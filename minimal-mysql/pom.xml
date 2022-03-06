@@ -18,12 +18,12 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.16</version>
+            <version>8.0.25</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
+            <version>1.18.22</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -31,15 +31,17 @@
             <artifactId>semla-logging</artifactId>
             <version>${semla.version}</version>
         </dependency>
+
+        <!-- tests -->
         <dependency>
             <groupId>org.testcontainers</groupId>
             <artifactId>mysql</artifactId>
-            <version>1.14.3</version>
+            <version>1.16.3</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.semla</groupId>
-            <artifactId>semla-testing</artifactId>
+            <artifactId>semla-common-test</artifactId>
             <version>${semla.version}</version>
             <scope>test</scope>
         </dependency>

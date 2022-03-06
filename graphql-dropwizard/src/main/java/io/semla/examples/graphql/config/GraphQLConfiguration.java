@@ -1,19 +1,17 @@
 package io.semla.examples.graphql.config;
 
 import io.dropwizard.Configuration;
-import io.semla.config.DatasourceConfiguration;
+import io.semla.datasource.Datasource;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.NoArgsConstructor;
 
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
 public class GraphQLConfiguration extends Configuration {
 
-  private DatasourceConfiguration datasource;
+  private final Datasource.Configuration datasource;
 
-  public DatasourceConfiguration getDatasource() {
+  public Datasource.Configuration getDatasource() {
     return datasource;
   }
 }

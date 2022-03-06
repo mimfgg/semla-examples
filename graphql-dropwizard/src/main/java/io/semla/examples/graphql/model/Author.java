@@ -9,15 +9,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Managed
-@AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class Author {
 
   @Id

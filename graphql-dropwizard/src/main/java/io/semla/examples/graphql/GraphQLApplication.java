@@ -4,8 +4,8 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import io.semla.Semla;
-import io.semla.config.DatasourceConfiguration;
-import io.semla.config.PostgresqlDatasourceConfiguration;
+import io.semla.datasource.Datasource;
+import io.semla.datasource.PostgresqlDatasource;
 import io.semla.examples.graphql.api.GraphQLResource;
 import io.semla.examples.graphql.config.GraphQLConfiguration;
 import io.semla.examples.graphql.health.DatasourceHealthCheck;
@@ -25,8 +25,8 @@ public class GraphQLApplication extends Application<GraphQLConfiguration> {
     // Semla's TypeInfo works a bit differently than Jackson's
     // Therefore we need to register a mixIn for jackson to be able to compose both types
     bootstrap.getObjectMapper().addMixIn(
-        DatasourceConfiguration.class,
-        MixIns.createFor(PostgresqlDatasourceConfiguration.class)
+        Datasource.Configuration.class,
+        MixIns.createFor(PostgresqlDatasource.Configuration.class)
     );
   }
 
