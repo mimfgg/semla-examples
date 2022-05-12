@@ -14,7 +14,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <maven.compiler.release>17</maven.compiler.release>
-        <semla.version>1.2.0</semla.version>
+        <semla.version>1.2.1</semla.version>
     </properties>
     <modules>
         <module>minimal-mysql</module>
